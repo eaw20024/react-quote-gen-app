@@ -4,8 +4,13 @@ import Adapter from "@wojtekmaj/enzyme-adapter-react-17";
 import App from "./App";
 
 describe("App", () => {
-  it("should render a <div />", () => {
-    const container = shallow(<App />);
-    expect(container.find("div").length).toEqual(1);
+  it("renders App Commponent", () => {
+    const appWrapper = shallow(<App />);
+    expect(appWrapper.exists()).toBe(true);
+  });
+
+  it("should render two <div />'s", () => {
+    const appWrapper = shallow(<App />);
+    expect(appWrapper.find("div").length).toEqual(2);
   });
 });
