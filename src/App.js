@@ -9,7 +9,7 @@ function App() {
   const [search, setSearch] = useState("");
 
   const url =
-    "https://quote-garden.herokuapp.com/api/v3/quotes/random?&count=7";
+    "https://quote-garden.herokuapp.com/api/v3/quotes/random?&count=5";
 
   //Query the API
   useEffect(() => {
@@ -17,7 +17,7 @@ function App() {
       .get(url)
       .then((res) => {
         setQuotes(res.data.data);
-        console.log(res.data.data);
+        //console.log(res.data.data);
       })
       .catch((err) => console.error(err));
   }, []);
@@ -27,8 +27,8 @@ function App() {
   };
 
   // Search feature for filtering specific quote genres
-  const filteredQuotesGenre = quotes.filter((quote) =>
-    quote.quoteGenre.toLowerCase().includes(search.toLowerCase())
+  const filteredQuotesAuthor = quotes.filter((quote) =>
+    quote.quoteAuthor.toLowerCase().includes(search.toLowerCase())
   );
 
   return (
@@ -38,16 +38,17 @@ function App() {
         <form>
           <input
             type="text"
-            placeholder="Search Quote Genres"
+            placeholder="Search Quote Authors"
             className="quote-genre-input"
             onChange={handleChange}
           />
         </form>
       </div>
-      {filteredQuotesGenre.map((quote) => {
+      {filteredQuotesAuthor.map((quote) => {
         return (
           <Quotes
             key={quote.id}
+            id={quote.id}
             quoteText={quote.quoteText}
             quoteAuthor={quote.quoteAuthor}
             quoteGenre={quote.quoteGenre}
