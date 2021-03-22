@@ -1,5 +1,9 @@
 <img width="1632" alt="Screen Shot 2021-03-21 at 11 47 15 PM" src="https://user-images.githubusercontent.com/8358989/111942181-2e8c8800-8aa9-11eb-900c-d5878c0620b5.png">
 
+<img width="411" alt="Screen Shot 2021-03-22 at 12 36 50 AM" src="https://user-images.githubusercontent.com/8358989/111942384-8cb96b00-8aa9-11eb-8297-cfaef2badff1.png">
+
+<img width="560" alt="Screen Shot 2021-03-22 at 12 37 56 AM" src="https://user-images.githubusercontent.com/8358989/111942402-9642d300-8aa9-11eb-9eda-aa47581675a6.png">
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
