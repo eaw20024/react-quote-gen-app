@@ -1,5 +1,5 @@
 import React from "react";
-import "./Quotes.css";
+import "./Quotes.scss";
 
 const Quotes = ({
   quoteText,
